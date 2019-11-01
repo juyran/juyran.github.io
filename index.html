@@ -6,7 +6,7 @@
 <style>
 A:link, A:visited, A:hover {
     	FONT-SIZE: 50pt;
-	TEXT-DECORATION: none;
+		TEXT-DECORATION: none;
 }
 
 
@@ -27,10 +27,10 @@ html, body {
 }
 
 .flex-container > div {
-	width: 475px;
+	width: 450px;
 	margin: 5px;
 	text-align: center;
- 	font-size: 50px;
+ 	font-size: 50pt;
   	opacity: 0.5;
   	font-weight: bold;
   	height: 120px;
@@ -41,28 +41,24 @@ html, body {
 
 input[type=text] {
   width: 90%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 00px 20px;
+  margin: 0px 0;
   box-sizing: border-box;
-  border: 2px solid #ffffff;
-
-  background-color: #000000;
+  border: 0px solid #ffffff;
+  font-size: 50px;
+  background-color: #333333;
   color: white;
-
+  display:table-cell;
+ 
+  
+  top: 50%;
+  height:50pt;
 }
 
 
 </style>
 </head>
-<body>
-<br/>
-<center>
-	<form action="https://www.google.com/search" class="searchform" method="get" name="searchform">
-		<input name="sitesearch" type="hidden" value="">
-		<input autocomplete="on" class="form-control search" name="q" placeholder="Google it..." required="required"  type="text">
-	</form>
-</center>
-<br/>
+<body onLoad="self.focus();document.searchform.q.focus()">
 
 
 <div class="flex-container">
@@ -71,7 +67,12 @@ input[type=text] {
 
 
 
-
+	<div style="width: 3000px;  flex-grow: 8;background-color: #333333; opacity: 0.5;" onmouseover="style.opacity='1';" onmouseout="style.opacity='0.5';">
+		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" >
+		<input name="sitesearch" type="hidden" value="" autofocus="autofocus">
+		<input autocomplete="on" class="form-control search" name="q" placeholder="Google it..." required="required"  type="text">
+		</form>
+	</div>
 
 	<div style="flex-grow: 1;background-color: rgb(86, 86, 86); opacity: 0.5;" onmouseover="style.opacity='1';" onmouseout="style.opacity='0.5';">
 		<a href="http://forum.hardmob.com.br/usercp.php?s=e2bcb6e71b50795502f504a47623940b">
@@ -179,7 +180,7 @@ input[type=text] {
 
 	<div style="flex-grow: 1;background-color: rgb(128, 128, 128); opacity: 0.5;" onmouseover="style.opacity='1';" onmouseout="style.opacity='0.5';">
 		<a href="http://login.univesp.br/">
-			<font color="#FFFFFF"> U N I </font><font style="background-color: #808080;" color="#AF1817"> \<font color="#000000">V</font>/ </font><font color="#FFFFFF"> E S P</font>
+			<font color="#FFFFFF"> UNI</font><font style="background-color: #808080;" color="#AF1817">\<font color="#000000">V</font>/</font><font color="#FFFFFF">ESP</font>
 		</a>
 	</div>
 	<div style="flex-grow: 1;background-color: rgb(26, 26, 28); opacity: 0.5;" onmouseover="style.opacity='1';" onmouseout="style.opacity='0.5';">
